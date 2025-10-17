@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		60DDA8E12EA21AB400D81A72 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 60DDA8E02EA21AB400D81A72 /* OpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		60DDA8C02EA20B2F00D81A72 /* ChatGPTRapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTRapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DDA8E12EA21AB400D81A72 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = ChatGPTRapper;
 			packageProductDependencies = (
+				60DDA8E02EA21AB400D81A72 /* OpenAI */,
 			);
 			productName = ChatGPTRapper;
 			productReference = 60DDA8C02EA20B2F00D81A72 /* ChatGPTRapper.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 60DDA8B72EA20B2F00D81A72;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				60DDA8DF2EA21AB400D81A72 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 60DDA8C12EA20B2F00D81A72 /* Products */;
 			projectDirPath = "";
@@ -343,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60DDA8DF2EA21AB400D81A72 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60DDA8E02EA21AB400D81A72 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60DDA8DF2EA21AB400D81A72 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60DDA8B82EA20B2F00D81A72 /* Project object */;
 }
