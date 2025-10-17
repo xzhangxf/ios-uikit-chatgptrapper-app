@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //        window?.makeKeyAndVisible()
                 guard let windowScene = (scene as? UIWindowScene) else { return }
                 window = UIWindow(windowScene: windowScene)
-                window?.rootViewController = ViewController() //window will show on the viewcontroller
+                window?.rootViewController = ChatViewController() //window will show on the viewcontroller
                 window?.makeKeyAndVisible()
     }
 
